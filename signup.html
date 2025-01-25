@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <title>Signup Page</title>
+  </head>
+  <body>
+    <div class="d-flex align-items-center justify-content-center vh-100">
+      <div
+        class="card w-50 mx-auto p-5 m-5 bg-transparent blur border-3 border-white"
+      >
+        <h2 class="text-center text-white mb-5 pacifico-regular">Login System</h2>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control bg-transparent rounded-5 border-2 border-white text-white"
+            id="floatingInput"
+            placeholder="Name"
+          />
+          <label
+            for="floatingInput"
+            class="text-white bg-transparent"
+            id="custom-label"
+            >Name</label
+          >
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control bg-transparent rounded-5 border-2 border-white text-white"
+            id="floatingEmail"
+            placeholder="name@example.com"
+          />
+          <label
+            for="floatingInput"
+            class="text-white bg-transparent"
+            id="custom-label"
+            >Email address</label
+          >
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control bg-transparent rounded-5 border-2 border-white text-white"
+            id="floatingPassword"
+            placeholder="Password"
+          />
+          <label
+            for="floatingPassword"
+            class="text-white bg-transparent"
+            id="custom-label"
+            >Password</label
+          >
+        </div>
+        <button
+          onclick="validateSignUp();"
+          class="btn btn-light mt-4 w-25 mx-auto rounded-5 fw-medium"
+        >
+          Sign Up
+        </button>
+        <p id="exist" class="text-center mt-3"></p>
+        <p class="text-center text-white m-1 mb-0">
+          You have an account?
+          <a href="index.html" class="login text-white-50 text-decoration-none"
+            >Login</a
+          >
+        </p>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/signup.js"></script>
+  </body>
+</html>
